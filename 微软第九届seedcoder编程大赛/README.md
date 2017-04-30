@@ -1,6 +1,6 @@
 # 微软第九届seedcoder编程大赛
 
-*[比赛地址](https://www.luogu.org/contest/show?tid=1990)
+* [比赛链接](https://www.luogu.org/contest/show?tid=1990)
 
 * 开始时间2017-04-29 17:00
 
