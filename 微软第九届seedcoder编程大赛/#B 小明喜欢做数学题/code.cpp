@@ -2,20 +2,20 @@
 using namespace std;
 const int N = 2;
 const int mod = 100007;
-struct M {
+struct Matrix {
 	long long int m[N][N];
 };
-M A = {
+Matrix A = {
 	1,1,
 	1,0
 };
-M B = {
+Matrix B = {
 	1,0,
 	0,1
 };
-M fun(M a, M b) 
+Matrix fun(Matrix a, Matrix b) 
 {
-	M c;
+	Matrix c;
 	for (int i = 0; i<N; i++)
 	{
 		for (int j = 0; j<N; j++)
@@ -29,9 +29,9 @@ M fun(M a, M b)
 	}
 	return c;
 }
-M power(int k)
+Matrix power(int k)
 {
-	M ans = B, p = A;
+	Matrix ans = B, p = A;
 	while (k)
 	{
 		if (k & 1)
@@ -49,7 +49,7 @@ int main()
 	int a;
 	while (cin >> a)
 	{
-		M ans = power(a);
+		Matrix ans = power(a);
 		cout << ans.m[0][0] << endl;
 	}
 }
